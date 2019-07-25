@@ -1,7 +1,7 @@
 /*
 	Theme Name: Win10Explore
 	Theme URI: https://www.lovestu.com/win10explore
-	Version: 1.0
+	Version: 1.2
 	Author: applek
 	Author URI: https://www.lovestu.com
 	Description: 仿Win10资源管理器主题
@@ -143,10 +143,12 @@
 th {
     font-weight: lighter
 }
+
 .post-list-post {
     padding: 5px;
 
 }
+
 .post-list-post:hover {
     background-color: #e5f3ff !important
 }
@@ -539,7 +541,7 @@ h3.comments-title:after {
 }
 
 .comment-navigation .current, .comment-navigation .current:hover {
-    background: #fa2a2a;
+    background: #0066b4;
     color: #fff
 }
 
@@ -561,7 +563,7 @@ h3.comments-title:after {
 .commentform-info input:focus {
     box-shadow: none;
     color: #fff !important;
-    background: #fa2a2a
+    background: #0066b4
 }
 
 .commentform-info input:focus:-moz-input-placeholder {
@@ -584,7 +586,7 @@ h3.comments-title:after {
     padding: 8px 0;
     width: 140px !important;
     text-align: center;
-    background: #fa2a2a;
+    background: #0066b4;
     border: 0
 }
 
@@ -603,43 +605,98 @@ h3.comments-title:after {
 .comment-from a {
     color: #fff !important
 }
-@media (max-width: 991px){
-    body{
 
-        background:#efefef ;
+@media (max-width: 991px) {
+    body {
+
+        background: #efefef;
     }
+
     .layui-container {
-        width: 95%!important;
+        width: 95% !important;
 
     }
-    #main{
-        margin-top: 20px!important;
+
+    #main {
+        margin-top: 20px !important;
         box-shadow: none;
         background-color: #fff;
         height: 100%;
 
     }
+
     .content {
         height: 100% !important;
     }
 
-    .post-namelist-title{
+    .post-namelist-title {
         font-size: 25px;
     }
 
-    .post-content{
+    .post-content {
         height: 100%;
         max-height: none;
     }
+
     .toolbar-url {
         cursor: default;
         border: none;
     }
-    .toolbar{
+
+    .toolbar {
         font-size: medium;
     }
 
-    .post-namelist-title{
+    .post-namelist-title {
         font-size: medium;
     }
+}
+
+#searchform {
+    padding-left: 40px;
+
+}
+
+.screen-reader-text {
+    display: none;
+}
+
+#s {
+    width: 90%;
+}
+
+#searchsubmit {
+    display: none;
+}
+
+.widget:after {
+    content: '';
+    clear: both;
+}
+.post-content-content  blockquote {
+    position: relative;
+    margin: 30px 0;
+    padding: 10px 45px;
+    border-radius: 3px;
+    background-color: #f8f8fa;
+}
+.post-content-content blockquote:before{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 16px;
+    height: 14px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAYAAADISGwcAAAABmJLR0QA/wD/AP+gvaeTAAABJUlEQVQ4y62UzVHDMBCFPxgX4BJcQkpIKgAqwKkguAJDBSQdmAooAXPhlINLcDowFSQHr0fPipTMJHozmlnJT6u3f35o//YIlkBt9hroOccb8AQMwAvwY/d8vAMfZh8JY/XoHdTiLPR4LpyOBFABpTz+FeF/mohLnJsE5OZ8irwJcJcmEvvekwCTgI1Etotwa7FjnJsEFIwNA2NjhaIvceVpSVR/gAx4lX1v2QA4iBjlDJKNX6DCZU+b+F/urMT+Fv6QeYIWtqZIQ9l4tgXzUSvkcT+TrWQyl7POH8N7sBG7MhGXOGuYj+E9yHET0hGfooXZW2yKUgkocamtrmRowJUtmYDJeYOrt6LA9c2sPBljt4cudRFbcTDnje1jf8cCN+qNfjgBbfA/pMbdZOcAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC) no-repeat;
+    content: '';
+}
+.post-content-content blockquote:after{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+    width: 16px;
+    height: 14px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAYAAADISGwcAAAABmJLR0QA/wD/AP+gvaeTAAABJUlEQVQ4y62UzVHDMBCFPxgX4BJcQkpIKgAqwKkguAJDBSQdmAooAXPhlINLcDowFSQHr0fPipTMJHozmlnJT6u3f35o//YIlkBt9hroOccb8AQMwAvwY/d8vAMfZh8JY/XoHdTiLPR4LpyOBFABpTz+FeF/mohLnJsE5OZ8irwJcJcmEvvekwCTgI1Etotwa7FjnJsEFIwNA2NjhaIvceVpSVR/gAx4lX1v2QA4iBjlDJKNX6DCZU+b+F/urMT+Fv6QeYIWtqZIQ9l4tgXzUSvkcT+TrWQyl7POH8N7sBG7MhGXOGuYj+E9yHET0hGfooXZW2yKUgkocamtrmRowJUtmYDJeYOrt6LA9c2sPBljt4cudRFbcTDnje1jf8cCN+qNfjgBbfA/pMbdZOcAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC) -16px 0 no-repeat;
+    content: '';
 }

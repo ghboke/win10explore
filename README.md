@@ -8,7 +8,12 @@
 其他美化：H2标签，表格等  
 ![win10explore](/img/win10exp01.png)  
 ![win10explore](/img/win10exp02.png)
-
+## 更新日志
+2019-7-25  
+简单优化了一下搜索侧边栏  
+添加引用块样式  
+2019-7-21  
+修复手机上面适配问题  
 ## 演示&地址
 [https://www.lovestu.com/](https://www.lovestu.com)  
 [https://www.lovestu.com/win10explorer](https://www.lovestu.com/win10explorer) 
