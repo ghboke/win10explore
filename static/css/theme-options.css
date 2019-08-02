@@ -1,0 +1,53 @@
+.theme-set-main {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+}
+
+.theme-set-itemright {
+
+}
+
+.theme-set-from {
+    max-width: 700px;
+}
+
+.theme-set-input {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #32373c;
+    outline: 0;
+    transition: 50ms border-color ease-in-out;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 1.3;
+    width: 300px;
+
+}
+
+.theme-set-label {
+    line-height: 22px;
+    height: 22px;
+    padding: 2px 0;
+}
+
+.theme-set-control {
+    vertical-align:text-top;
+    display: inline-block;
+    min-width: 500px;
+}
+
+.theme-set-title {
+    width: 180px;
+    text-align: left;
+    display: inline-block;
+    vertical-align:text-top;
+
+}
+.layui-tab-item{
+    height: 500px!important;
+    overflow: auto;
+}
+.layui-form-switch{
+    margin-top: 0!important;
+}

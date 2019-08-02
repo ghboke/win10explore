@@ -6,9 +6,8 @@ $catid = $cat[0]->cat_ID;
 ?>
 
 <div class="layui-container" id="main">
-    <div class="blog-title"><img class="toobar-icon" src="<?php echo getImgDir('folder.png') ?>"
-                                 alt=""><?php /*bloginfo('name');*/
-        echo bloginfo('name') ?>
+    <div class="blog-title"><?php obj_title_icon();
+        bloginfo('name'); ?>
         <div class="post-title"> - <?php the_title(); ?></div>
         <div class="close"><i class="layui-icon layui-icon-close"></i>
         </div>
@@ -27,7 +26,7 @@ $catid = $cat[0]->cat_ID;
                             class="fa fa-arrow-up" aria-hidden="true"></i></div>
             </div>
             <div class="layui-col-md9 layui-col-xs-12 layui-col-sm-12">
-                <div class="toolbar-url"><img class="toobar-icon" src="<?php echo getImgDir('folder.png') ?>"
+                <div class="toolbar-url"><img class="toobar-icon" src="<?php echo getImgDir('folder.ico') ?>"
                                               alt=""><span><a
                                 href="//<?php echo $_SERVER['SERVER_NAME']; ?>">本网站</a></span>><span><a
                                 href="<?php echo get_category_link($catid) ?>"><?php echo get_cat_name($catid) ?></a></span>><span><?php the_title(); ?></span>

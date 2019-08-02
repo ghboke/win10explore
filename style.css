@@ -1,7 +1,7 @@
 /*
 	Theme Name: Win10Explore
 	Theme URI: https://www.lovestu.com/win10explore
-	Version: 1.2
+	Version: 1.3
 	Author: applek
 	Author URI: https://www.lovestu.com
 	Description: 仿Win10资源管理器主题
@@ -42,6 +42,9 @@
 .close:hover {
     background: red;
     color: #fff
+}
+.close:hover a {
+    color: #fff!important;
 }
 
 .blog-title {

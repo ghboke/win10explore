@@ -1,5 +1,14 @@
 <?php
+//获取设置
+define('THEME_ID', 'lovestutheme01'); // 主题ID，请勿修改,否则可能导致配置错误
+define('THEME_VERSION', '1.3.0'); // 主题内部版本号，请勿修改，否则可能导致配置错误
+define('THEME_ID_SET', 'lovestutheme01_set');
+
+global $theme_option;
+
+theme_int_set();
 include_once 'inc/obj.php';
+include_once 'inc/ajax.php';
 //add_filter('get_avatar', 'my_custom_avatar', 1, 5);
 function my_custom_avatar($avatar, $id_or_email, $size, $default, $alt)
 {
@@ -63,7 +72,7 @@ function my_comment($comment, $args, $depth)
             } ?>
         </div>
         <div class="media-body">
-            <?php echo __('<p class="author_name">'). get_comment_author_link().$reply.'</p>'; ?>
+            <?php echo __('<p class="author_name">') . get_comment_author_link() . $reply . '</p>'; ?>
             <?php if ($comment->comment_approved == '0') : ?>
                 <em>评论等待审核...</em><br/>
             <?php endif; ?>
@@ -80,6 +89,33 @@ function my_comment($comment, $args, $depth)
     </div>
 
     <?php
+}
+
+add_action('admin_menu', 'theme_options_menu');
+function theme_options_menu()
+{
+    add_menu_page('主题设置', '主题设置', 'administrator', 'theme_options_menu', 'theme_settings_admin', 'dashicons-admin-appearance');
+}
+
+function theme_settings_admin()
+{
+    include_once get_template_directory() . "/inc/page-options.php";
+}
+
+
+function theme_int_set()
+{
+    global $theme_option;
+    $theme_option = get_option(THEME_ID_SET);
+    if ($theme_option == false || $theme_option == '{}') {
+        $theme_option = array('seo' => 0, 'single_icon' => '', 'index_title' => '', 'site_description' => '', 'site_key' => '', 'autoseo' => 0,'version'=>THEME_VERSION);
+
+        update_option(THEME_ID_SET, json_encode($theme_option));
+        $theme_option = json_decode(json_encode($theme_option), true);
+    } else {
+        $theme_option = json_decode($theme_option, true);
+    }
+
 }
 
 ?>

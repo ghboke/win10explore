@@ -3,7 +3,7 @@ get_header();
 the_post();
 ?>
 <div class="layui-container" id="main">
-    <div class="blog-title"><img class="toobar-icon" src="<?php echo getImgDir('folder.png') ?>"
+    <div class="blog-title"><img class="toobar-icon" src="<?php echo getImgDir('folder.ico') ?>"
                                  alt=""><?php /*bloginfo('name');*/
         echo bloginfo('name') ?>
         <div class="post-title"> - <?php the_title(); ?></div>
@@ -24,7 +24,7 @@ the_post();
                     <i class="fa fa-arrow-up" aria-hidden="true"></i></div>
             </div>
             <div class="layui-col-md9  layui-col-xs-12 layui-col-sm-12">
-                <div class="toolbar-url"><img class="toobar-icon" src="<?php echo getImgDir('folder.png') ?>"
+                <div class="toolbar-url"><img class="toobar-icon" src="<?php echo getImgDir('folder.ico') ?>"
                                               alt=""><span>
                         <a href="//<?php echo $_SERVER['SERVER_NAME']; ?>">本网站</a></span>
                     ><span><?php the_title() ?></span>

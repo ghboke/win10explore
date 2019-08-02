@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <div class="layui-container" id="main">
-    <div class="blog-title"><img class="toobar-icon" src="<?php echo getImgDir('folder.png') ?>"
+    <div class="blog-title"><img class="toobar-icon" src="<?php echo getImgDir('folder.ico') ?>"
                                  alt=""><?php /*bloginfo('name');*/
         echo bloginfo('name')  ?>
         <div class="close"><i class="layui-icon layui-icon-close"></i>
@@ -23,7 +23,7 @@ get_header();
                             class="fa fa-arrow-up" aria-hidden="true"></i></div>
             </div>
             <div class="layui-col-md9 layui-col-xs-12 layui-col-sm-12">
-                <div class="toolbar-url"><img class="toobar-icon" src="<?php echo getImgDir('folder.png') ?>"
+                <div class="toolbar-url"><img class="toobar-icon" src="<?php echo getImgDir('folder.ico') ?>"
                                               alt=""><span><a
                                 href="//<?php echo $_SERVER['SERVER_NAME']; ?>">本网站</span></a></span>><span>搜索内容</span>><span><?php echo get_search_query() ?></span>
                 </div>
