@@ -22,6 +22,10 @@
 添加引用块样式  
 2019-7-21  
 修复手机上面适配问题  
+## 注意事项  
+需要安装插件：WP-PostViews，否则会阅读数量那儿报错，插件请WordPress后台搜索安装  
+## LICENSE  
+遵循GPL协议，非商业用途免费使用  
 ## 演示&地址
 [https://www.lovestu.com/](https://www.lovestu.com)  
 [https://www.lovestu.com/win10explorer](https://www.lovestu.com/win10explorer) 
